@@ -1,0 +1,4 @@
+target/
+*.class
+.nb-gradle/
+.DS_Store

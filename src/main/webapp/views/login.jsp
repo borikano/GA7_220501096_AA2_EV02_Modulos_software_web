@@ -5,7 +5,6 @@
     Modulo: Login web con JSP, Servlets, JDBC y MySQL
 --%>
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String mensajeError = (String) request.getAttribute("mensajeError");
@@ -59,7 +58,7 @@
     </main>
 
     <footer class="footer">
-        Proyecto academico desarrollado con Jakarta EE, Servlets, JSP, JDBC y MySQL.
+        Proyecto desarrollado con Jakarta EE, Servlets, JSP, JDBC y MySQL.
     </footer>
     <div class="signature">
         Desarrollado por Luis H. Echeverry O - ADSO 3118315

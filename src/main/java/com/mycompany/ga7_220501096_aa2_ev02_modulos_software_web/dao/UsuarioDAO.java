@@ -47,7 +47,6 @@ public class UsuarioDAO {
             statement.setString(1, correo);
 
             try (ResultSet resultado = statement.executeQuery()) {
-
                 if (resultado.next()) {
                     String claveHash = resultado.getString("clave");
 
@@ -151,6 +150,21 @@ public class UsuarioDAO {
              PreparedStatement statement = conexion.prepareStatement(sql)) {
 
             statement.setString(1, correo);
+
+            try (ResultSet resultado = statement.executeQuery()) {
+                return resultado.next();
+            }
+        }
+    }
+
+    public boolean existeCorreoEnOtroUsuario(String correo, int idUsuario) throws SQLException, ClassNotFoundException {
+        String sql = "SELECT id FROM usuario WHERE correo = ? AND id <> ?";
+
+        try (Connection conexion = Conexion.obtenerConexion();
+             PreparedStatement statement = conexion.prepareStatement(sql)) {
+
+            statement.setString(1, correo);
+            statement.setInt(2, idUsuario);
 
             try (ResultSet resultado = statement.executeQuery()) {
                 return resultado.next();

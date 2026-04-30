@@ -24,6 +24,10 @@ public class SeguridadClave {
             return false;
         }
 
-        return BCrypt.checkpw(clavePlano, claveHash);
+        try {
+            return BCrypt.checkpw(clavePlano, claveHash);
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
     }
 }

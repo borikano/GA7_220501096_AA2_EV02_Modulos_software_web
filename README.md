@@ -320,3 +320,98 @@ La página inicial redirige automáticamente al login.
 ## Conclusión
 
 El proyecto cumple con los requerimientos de la evidencia, ya que implementa un módulo web con JSP, Servlets, métodos GET y POST, conexión JDBC, gestión de usuarios, validación de sesión, seguridad básica en contraseñas y versionamiento del proceso mediante Git.
+
+---
+
+## Formularios JSP, metodos HTTP y flujo del modulo web
+
+### Formularios JSP utilizados
+
+El proyecto utiliza formularios desarrollados en JSP para capturar y procesar informacion del usuario.
+
+Archivos principales:
+
+- src/main/webapp/views/login.jsp
+- src/main/webapp/views/formularioUsuario.jsp
+- src/main/webapp/views/usuarios.jsp
+
+### Uso de metodos HTTP
+
+En esta evidencia se implementan los metodos GET y POST para gestionar el flujo del modulo web.
+
+#### Metodo GET
+
+Se utiliza para:
+- mostrar formularios
+- listar usuarios
+- cargar datos para edicion
+- redirigir a vistas JSP
+
+Aplicado principalmente en:
+- UsuarioServlet.java
+- navegacion hacia usuarios.jsp
+- navegacion hacia formularioUsuario.jsp
+
+#### Metodo POST
+
+Se utiliza para:
+- procesar el formulario de login
+- registrar usuarios
+- actualizar datos enviados desde formularios JSP
+
+Aplicado principalmente en:
+- LoginServlet.java
+- UsuarioServlet.java
+
+### Relacion entre JSP y Servlets
+
+#### Login
+- Vista: views/login.jsp
+- Servlet: LoginServlet.java
+- Metodo principal: POST
+- Funcion: recibir credenciales, validar acceso y crear sesion
+
+#### Gestion de usuarios
+- Vista principal: views/usuarios.jsp
+- Vista de formulario: views/formularioUsuario.jsp
+- Servlet: UsuarioServlet.java
+- Metodos principales:
+  - GET para listar, consultar o preparar edicion
+  - POST para guardar o actualizar informacion
+
+#### Cierre de sesion
+- Servlet: LogoutServlet.java
+- Funcion: invalidar sesion activa y redirigir al login
+
+### Flujo general del sistema
+
+login.jsp
+  -> POST
+LoginServlet
+  -> validacion
+dashboard.jsp
+
+usuarios.jsp
+  -> GET
+UsuarioServlet
+  -> consulta con DAO
+UsuarioDAO
+  -> respuesta
+usuarios.jsp
+
+formularioUsuario.jsp
+  -> POST
+UsuarioServlet
+  -> persistencia con DAO
+UsuarioDAO
+  -> redireccion
+usuarios.jsp
+
+### Evidencia del objetivo de la actividad
+
+Este modulo web demuestra:
+- uso de formularios JSP
+- uso de Servlets
+- aplicacion de metodos GET y POST
+- integracion con JDBC y MySQL
+- separacion entre vista, logica de control y acceso a datos

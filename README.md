@@ -1,3 +1,18 @@
+<!-- GUIA_TECNICA_PROYECTO_INICIO -->
+
+## Guía técnica del proyecto
+
+Para facilitar la lectura, ejecución, prueba y auditoría técnica, este repositorio incluye una guía pública de navegación:
+
+- 00_GUIA_TECNICA_PROYECTO/README.md
+
+La evidencia funcional principal se encuentra en:
+
+- docs/EVIDENCIA_HTTP_JSP.md
+- docs/PRUEBAS_FUNCIONALES.md
+- evidencias/EV02-JSP-FUNCIONAL/README.md
+
+<!-- GUIA_TECNICA_PROYECTO_FIN -->
 # GA7-220501096-AA2-EV02 - Módulos de software codificados y probados
 
 ## Descripción del proyecto
@@ -415,3 +430,4 @@ Este modulo web demuestra:
 - aplicacion de metodos GET y POST
 - integracion con JDBC y MySQL
 - separacion entre vista, logica de control y acceso a datos
+

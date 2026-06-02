@@ -19,16 +19,16 @@ public class DatosIniciales {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
 
         Usuario[] usuarios = {
-            new Usuario("Sofia Herrera", "sofia.herrera@email.com", "Sofia123*"),
-            new Usuario("Daniel Castro", "daniel.castro@email.com", "Daniel123*"),
-            new Usuario("Valentina Gomez", "valentina.gomez@email.com", "Valentina123*"),
-            new Usuario("Mateo Ramirez", "mateo.ramirez@email.com", "Mateo123*"),
-            new Usuario("Isabella Morales", "isabella.morales@email.com", "Isabella123*"),
-            new Usuario("Sebastian Vargas", "sebastian.vargas@email.com", "Sebastian123*"),
-            new Usuario("Natalia Pardo", "natalia.pardo@email.com", "Natalia123*"),
-            new Usuario("Felipe Cardenas", "felipe.cardenas@email.com", "Felipe123*"),
-            new Usuario("Gabriela Rios", "gabriela.rios@email.com", "Gabriela123*"),
-            new Usuario("Tomas Navarro", "tomas.navarro@email.com", "Tomas123*")
+            new Usuario("Sofia Herrera", "usuario.web.01@example.com", "Sofia123*"),
+            new Usuario("Daniel Castro", "usuario.web.03@example.com", "Daniel123*"),
+            new Usuario("Valentina Gomez", "usuario.web.04@example.com", "Valentina123*"),
+            new Usuario("Mateo Ramirez", "usuario.web.05@example.com", "Mateo123*"),
+            new Usuario("Isabella Morales", "usuario.web.06@example.com", "Isabella123*"),
+            new Usuario("Sebastian Vargas", "usuario.web.07@example.com", "Sebastian123*"),
+            new Usuario("Natalia Pardo", "usuario.web.08@example.com", "Natalia123*"),
+            new Usuario("Felipe Cardenas", "usuario.web.09@example.com", "Felipe123*"),
+            new Usuario("Gabriela Rios", "usuario.web.10@example.com", "Gabriela123*"),
+            new Usuario("Tomas Navarro", "usuario.web.11@example.com", "Tomas123*")
         };
 
         System.out.println("===== CARGA DE DATOS INICIALES =====");

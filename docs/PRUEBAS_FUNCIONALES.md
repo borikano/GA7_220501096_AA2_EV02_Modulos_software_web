@@ -48,7 +48,7 @@ OK
 ### Datos usados
 
 ```text
-Correo: sofia.herrera@email.com
+Correo: usuario.web.01@example.com
 Clave: Sofia123*
 ```
 
@@ -77,7 +77,7 @@ OK
 ### Datos usados
 
 ```text
-Correo: sofia.herrera@email.com
+Correo: usuario.web.01@example.com
 Clave: claveIncorrecta
 ```
 
@@ -187,7 +187,7 @@ OK
 
 ```text
 Nombre: Mariana Salazar
-Correo: mariana.salazar@email.com
+Correo: usuario.web.02@example.com
 Clave: Mariana123*
 ```
 
@@ -217,7 +217,7 @@ Se seleccionó la opción editar sobre el usuario registrado.
 
 ```text
 Nombre: Mariana Salazar Actualizada
-Correo: mariana.salazar.actualizada@email.com
+Correo: usuario.web.02.actualizado@example.com
 Estado: Activo
 ```
 
@@ -378,3 +378,4 @@ test: document functional web tests
 Las pruebas funcionales realizadas permiten evidenciar que el módulo web cumple con los requerimientos solicitados para la evidencia.
 
 El proyecto implementa formularios HTML/JSP, Servlets, métodos GET y POST, conexión JDBC con MySQL, manejo de sesiones, seguridad básica en credenciales mediante BCrypt, administración de usuarios y versionamiento con Git.
+

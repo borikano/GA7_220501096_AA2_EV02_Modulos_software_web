@@ -1,3 +1,16 @@
+<!-- LICENCIA_USO_ACADEMICO_INICIO -->
+
+## Licencia y uso académico
+
+Este repositorio se publica con fines académicos, de revisión técnica y de portafolio.
+
+La licencia y condiciones de uso están documentadas en:
+
+- LICENSE.md
+
+Los datos usados en pruebas son ficticios y deben mantenerse anonimizados.
+
+<!-- LICENCIA_USO_ACADEMICO_FIN -->
 <!-- GUIA_TECNICA_PROYECTO_INICIO -->
 
 ## Guía técnica del proyecto
@@ -201,7 +214,7 @@ Esta clase registra usuarios usando el DAO del proyecto, por lo que las claves s
 Después de ejecutar `DatosIniciales.java`, se puede probar el acceso con:
 
 ```text
-Correo: sofia.herrera@email.com
+Correo: usuario.web.01@example.com
 Clave: Sofia123*
 ```
 
@@ -430,4 +443,6 @@ Este modulo web demuestra:
 - aplicacion de metodos GET y POST
 - integracion con JDBC y MySQL
 - separacion entre vista, logica de control y acceso a datos
+
+
 
